@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+<<<<<<< Updated upstream
 
     // Lazy add
     
@@ -25,6 +26,9 @@
 
     self.view.backgroundColor = [UIColor grayColor];
 
+=======
+    self.view.backgroundColor = [UIColor grayColor];
+>>>>>>> Stashed changes
 }
 
 - (void)didReceiveMemoryWarning {
