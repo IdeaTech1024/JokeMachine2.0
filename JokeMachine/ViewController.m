@@ -24,8 +24,8 @@
     // haofeng
 
     self.view.backgroundColor = [UIColor grayColor];
-
-    // checkout test
+    
+    NSLog(@"hello world");
 }
 
 - (void)didReceiveMemoryWarning {
