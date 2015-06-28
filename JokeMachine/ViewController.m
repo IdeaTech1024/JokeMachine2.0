@@ -18,13 +18,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-<<<<<<< HEAD
+
     // Lazy add
     
     // haofeng
-=======
+
     self.view.backgroundColor = [UIColor grayColor];
->>>>>>> UI
+
 }
 
 - (void)didReceiveMemoryWarning {
