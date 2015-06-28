@@ -87,7 +87,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QyI-mn-5eb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1997" y="-310"/>
-
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
