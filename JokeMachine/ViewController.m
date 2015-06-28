@@ -25,6 +25,7 @@
 
     self.view.backgroundColor = [UIColor grayColor];
 
+    // checkout test
 }
 
 - (void)didReceiveMemoryWarning {

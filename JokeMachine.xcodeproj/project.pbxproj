@@ -84,6 +84,8 @@
 		6326ADC21B3F878900AD053B /* JokeMachine */ = {
 			isa = PBXGroup;
 			children = (
+				639B1E561B3FDC0F00180837 /* HomeViewController.h */,
+				639B1E571B3FDC0F00180837 /* HomeViewController.m */,
 				6326ADC71B3F878900AD053B /* AppDelegate.h */,
 				6326ADC81B3F878900AD053B /* AppDelegate.m */,
 				6326ADCA1B3F878900AD053B /* ViewController.h */,
@@ -92,8 +94,6 @@
 				6326ADD01B3F878900AD053B /* Images.xcassets */,
 				6326ADD21B3F878900AD053B /* LaunchScreen.xib */,
 				6326ADC31B3F878900AD053B /* Supporting Files */,
-				639B1E561B3FDC0F00180837 /* HomeViewController.h */,
-				639B1E571B3FDC0F00180837 /* HomeViewController.m */,
 			);
 			path = JokeMachine;
 			sourceTree = "<group>";
