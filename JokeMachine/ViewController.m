@@ -26,6 +26,8 @@
     self.view.backgroundColor = [UIColor grayColor];
     
     NSLog(@"hello world");
+    
+    // merge test
 }
 
 - (void)didReceiveMemoryWarning {
