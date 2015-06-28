@@ -19,6 +19,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     // Lazy add
+    
+    // Lazy add 2.0
 }
 
 - (void)didReceiveMemoryWarning {
