@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>00401E1E-130E-4315-8CA6-E0DF3ED7A9C6</string>
+	<string>2F2F287D-86A7-49D4-B5F2-5FA4076F1BE9</string>
 	<key>IDESourceControlProjectName</key>
 	<string>JokeMachine</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -21,7 +21,7 @@
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/IdeaTech1024/JokeMachine2.0.git</string>
+	<string>https://github.com/lazy1024/JokeMachine.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
