@@ -17,17 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-
-    // Lazy add
-    
-    // haofeng
-
-    self.view.backgroundColor = [UIColor grayColor];
-    
-    NSLog(@"hello world");
-    
-    // merge test
 }
 
 - (void)didReceiveMemoryWarning {
