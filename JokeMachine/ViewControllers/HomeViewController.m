@@ -7,12 +7,14 @@
 //
 
 #import "HomeViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import "NSString+DocumentPath.h"
 
 #define SCREEN_WIDTH        ([[UIScreen mainScreen] bounds].size.width)
 #define SCREEN_HEIGHT       ([[UIScreen mainScreen] bounds].size.height)
 #define NAVIGATION_HEIGHT   (self.navigationController.navigationBar.frame.size.height)
 
-@interface HomeViewController ()<UIScrollViewDelegate>
+@interface HomeViewController ()<UIScrollViewDelegate,AVAudioPlayerDelegate>
 {}
 
 @property (weak, nonatomic) IBOutlet UIScrollView *homeScrollView;
@@ -20,6 +22,13 @@
 @property (weak, nonatomic) IBOutlet UIView *sendJokeView;
 
 @property (weak, nonatomic) IBOutlet UITextView *jokeContentTextView;
+@property (strong, nonatomic) IBOutlet UIButton *recordBtn;
+
+@property (nonatomic,strong) AVAudioRecorder *recorder;
+@property (nonatomic,strong) AVAudioPlayer *player;
+@property (nonatomic) BOOL isRecording;
+@property (nonatomic,strong) NSString *fileName;
+
 
 @end
 
@@ -31,6 +40,98 @@
     
     [self initHomeScrollView];
     [self initSendJokeView];
+}
+
+#pragma mark - private method
+
+//预览录制的内容
+- (void)recordPreview:(id)sender {
+    if(self.player.isPlaying){
+        [self.player stop];
+    }
+    
+    //播放
+    NSString *filePath=[NSString documentPathWith:self.fileName];
+    NSURL *fileUrl=[NSURL fileURLWithPath:filePath];
+    [self initPlayer];
+    NSError *error;
+    self.player=[[AVAudioPlayer alloc]initWithContentsOfURL:fileUrl error:&error];
+    [self.player setVolume:1];
+    [self.player prepareToPlay];
+    [self.player setDelegate:self];
+    [self.player play];
+    [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];
+}
+
+//结束录制
+- (IBAction)finishRecord:(id)sender {
+    self.isRecording=NO;
+    [self.recorder stop];
+    self.recorder=nil;
+}
+
+//开始录制
+- (IBAction)beginRecord:(id)sender {
+    if(self.isRecording){
+        return;
+    }
+    
+    self.isRecording = YES;
+    
+    NSDictionary *settings=[NSDictionary dictionaryWithObjectsAndKeys:
+                            [NSNumber numberWithFloat:8000],AVSampleRateKey,
+                            [NSNumber numberWithInt:kAudioFormatLinearPCM],AVFormatIDKey,
+                            [NSNumber numberWithInt:1],AVNumberOfChannelsKey,
+                            [NSNumber numberWithInt:16],AVLinearPCMBitDepthKey,
+                            [NSNumber numberWithBool:NO],AVLinearPCMIsBigEndianKey,
+                            [NSNumber numberWithBool:NO],AVLinearPCMIsFloatKey,
+                            nil];
+    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayAndRecord error: nil];
+    [[AVAudioSession sharedInstance] setActive:YES error:nil];
+    NSDate *now = [NSDate date];
+    NSDateFormatter *dateFormater = [[NSDateFormatter alloc] init];
+    [dateFormater setDateFormat:@"yyyyMMddHHmmss"];
+    NSString *fileName = [NSString stringWithFormat:@"rec_%@.wav",[dateFormater stringFromDate:now]];
+    self.fileName=fileName;
+    NSString *filePath=[NSString documentPathWith:fileName];
+    NSURL *fileUrl=[NSURL fileURLWithPath:filePath];
+    NSError *error;
+    self.recorder=[[AVAudioRecorder alloc]initWithURL:fileUrl settings:settings error:&error];
+    [self.recorder prepareToRecord];
+    [self.recorder setMeteringEnabled:YES];
+    [self.recorder peakPowerForChannel:0];
+    [self.recorder record];
+    
+    NSLog(@"录制的文件路径:%@",fileName);
+    
+}
+
+//初始化播放器
+-(void)initPlayer{
+    //初始化播放器的时候如下设置
+    UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
+    AudioSessionSetProperty(kAudioSessionProperty_AudioCategory,
+                            sizeof(sessionCategory),
+                            &sessionCategory);
+    
+    UInt32 audioRouteOverride = kAudioSessionOverrideAudioRoute_Speaker;
+    AudioSessionSetProperty (kAudioSessionProperty_OverrideAudioRoute,
+                             sizeof (audioRouteOverride),
+                             &audioRouteOverride);
+    
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+    //默认情况下扬声器播放
+    [audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [audioSession setActive:YES error:nil];
+    audioSession = nil;
+}
+
+#pragma mark - <AVAudioPlayerDelegate>
+-(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    [[UIDevice currentDevice]setProximityMonitoringEnabled:NO];
+    [self.player stop];
+    self.player=nil;
 }
 
 #pragma mark - <UIScrollViewDelegate>
@@ -61,6 +162,13 @@
 - (void)initSendJokeView
 {
     [self initJokeContentViewText];
+    
+    UIButton *previewBtn = [[UIButton alloc] initWithFrame:CGRectMake(40, 180, 100, 40)];
+    [previewBtn setTitle:@"试听" forState:UIControlStateNormal];
+    [previewBtn setBackgroundColor:[UIColor greenColor]];
+    [previewBtn addTarget:self action:@selector(recordPreview:) forControlEvents:UIControlEventTouchUpInside];
+    [_sendJokeView addSubview:previewBtn];
+    
 }
 
 - (void)initHomeScrollView

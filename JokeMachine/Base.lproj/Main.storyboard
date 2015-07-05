@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XCS-qD-ezv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C2043" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XCS-qD-ezv">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -50,9 +50,13 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojR-SM-ALt">
                                                 <rect key="frame" x="44" y="532" width="286" height="46"/>
-                                                <state key="normal" title="点击录音">
+                                                <state key="normal" title="按住录音">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="beginRecord:" destination="dFS-QN-cA8" eventType="touchDown" id="wTP-r2-qI1"/>
+                                                    <action selector="finishRecord:" destination="dFS-QN-cA8" eventType="touchUpInside" id="ytD-Vd-GeU"/>
+                                                </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="从前有座山，山里有座庙，庙里有个老和尚在讲段子..." translatesAutoresizingMaskIntoConstraints="NO" id="6fN-w5-tiq">
                                                 <rect key="frame" x="28" y="302" width="302" height="209"/>
@@ -76,6 +80,7 @@
                         <outlet property="homeScrollView" destination="Ntw-dx-YrG" id="rlg-6A-aNX"/>
                         <outlet property="homeView" destination="774-aG-CSR" id="rjz-d7-woE"/>
                         <outlet property="jokeContentTextView" destination="6fN-w5-tiq" id="Xdn-rK-hmH"/>
+                        <outlet property="recordBtn" destination="ojR-SM-ALt" id="5I6-dv-bz3"/>
                         <outlet property="sendJokeView" destination="A8G-WX-ZMf" id="apb-IK-iNp"/>
                     </connections>
                 </viewController>

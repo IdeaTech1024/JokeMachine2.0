@@ -14,6 +14,7 @@
 		6326ADD41B3F878900AD053B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6326ADD21B3F878900AD053B /* LaunchScreen.xib */; };
 		6326ADE01B3F878900AD053B /* JokeMachineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6326ADDF1B3F878900AD053B /* JokeMachineTests.m */; };
 		639B1E581B3FDC0F00180837 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639B1E571B3FDC0F00180837 /* HomeViewController.m */; };
+		664031DC1B4935830045E30F /* NSString+DocumentPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 664031DB1B4935830045E30F /* NSString+DocumentPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		6326ADDF1B3F878900AD053B /* JokeMachineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JokeMachineTests.m; sourceTree = "<group>"; };
 		639B1E561B3FDC0F00180837 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ViewControllers/HomeViewController.h; sourceTree = "<group>"; };
 		639B1E571B3FDC0F00180837 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ViewControllers/HomeViewController.m; sourceTree = "<group>"; };
+		664031DA1B4935830045E30F /* NSString+DocumentPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DocumentPath.h"; sourceTree = "<group>"; };
+		664031DB1B4935830045E30F /* NSString+DocumentPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DocumentPath.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +135,19 @@
 		6393C6BC1B417095001684CC /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				664031D91B4935490045E30F /* category */,
 			);
 			name = Global;
 			path = JokeMachine;
+			sourceTree = "<group>";
+		};
+		664031D91B4935490045E30F /* category */ = {
+			isa = PBXGroup;
+			children = (
+				664031DA1B4935830045E30F /* NSString+DocumentPath.h */,
+				664031DB1B4935830045E30F /* NSString+DocumentPath.m */,
+			);
+			name = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6326ADC91B3F878900AD053B /* AppDelegate.m in Sources */,
+				664031DC1B4935830045E30F /* NSString+DocumentPath.m in Sources */,
 				6326ADC61B3F878900AD053B /* main.m in Sources */,
 				639B1E581B3FDC0F00180837 /* HomeViewController.m in Sources */,
 			);
