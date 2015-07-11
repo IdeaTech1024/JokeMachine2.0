@@ -20,7 +20,26 @@
             </objects>
             <point key="canvasLocation" x="-2781" y="-310"/>
         </scene>
-        <!--  段子机-->
+        <!--我-->
+        <scene sceneID="fMj-0X-uSu">
+            <objects>
+                <viewController id="dl1-2I-Gz4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UVO-gO-hVq"/>
+                        <viewControllerLayoutGuide type="bottom" id="krE-au-pOX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ltw-xs-rk4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="我" id="QMX-Ze-50j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFH-pI-zkm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1267" y="-456"/>
+        </scene>
+        <!--Home View Controller-->
         <scene sceneID="wAr-tH-oKb">
             <objects>
                 <viewController id="dFS-QN-cA8" customClass="HomeViewController" sceneMemberID="viewController">
@@ -46,16 +65,10 @@
                                         <color key="backgroundColor" red="1" green="0.32665264040000003" blue="0.15803172269999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A8G-WX-ZMf" userLabel="SendJokeView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                        <rect key="frame" x="375" y="0.0" width="375" height="623"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="从前有座山，山里有座庙，庙里有个老和尚在讲段子..." translatesAutoresizingMaskIntoConstraints="NO" id="6fN-w5-tiq">
-                                                <rect key="frame" x="36" y="171" width="302" height="209"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
-                                            </textView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1gQ-cU-CZB">
-                                                <rect key="frame" x="39" y="87" width="62" height="59"/>
+                                                <rect key="frame" x="313" y="76" width="62" height="59"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojR-SM-ALt">
                                                 <rect key="frame" x="74" y="499" width="80" height="40"/>
@@ -76,6 +89,12 @@
                                                     <action selector="previewRecord:" destination="dFS-QN-cA8" eventType="touchUpInside" id="wfU-aY-9T9"/>
                                                 </connections>
                                             </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="从前有座山，山里有座庙，庙里有个老和尚在讲段子..." translatesAutoresizingMaskIntoConstraints="NO" id="6fN-w5-tiq">
+                                                <rect key="frame" x="36" y="8" width="302" height="209"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -84,7 +103,41 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="  段子机" id="Lgb-HK-J24"/>
+                    <navigationItem key="navigationItem" id="Lgb-HK-J24">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="3aR-Fc-w94">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UOG-IF-Hgu">
+                                <rect key="frame" x="16" y="7" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="我">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dl1-2I-Gz4" kind="push" id="ng5-zg-YcX"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <view key="titleView" contentMode="scaleToFill" id="fQs-ar-rPY">
+                            <rect key="frame" x="159" y="5.5" width="282" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wav-zE-0OX">
+                                    <rect key="frame" x="32" y="0.0" width="46" height="30"/>
+                                    <state key="normal" title="段子机">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggd-L7-X1m">
+                                    <rect key="frame" x="149" y="1" width="46" height="30"/>
+                                    <state key="normal" title="来一发">
+                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </navigationItem>
                     <connections>
                         <outlet property="homeScrollView" destination="Ntw-dx-YrG" id="rlg-6A-aNX"/>
                         <outlet property="homeView" destination="774-aG-CSR" id="rjz-d7-woE"/>

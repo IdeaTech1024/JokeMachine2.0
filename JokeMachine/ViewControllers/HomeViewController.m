@@ -44,21 +44,32 @@
 
 #pragma mark - private method
 - (IBAction)previewRecord:(UIButton *)sender {
-        if(self.player.isPlaying){
-            [self.player stop];
-        }
-        
-        //播放
-        NSString *filePath=[NSString documentPathWith:self.fileName];
-        NSURL *fileUrl=[NSURL fileURLWithPath:filePath];
-        [self initPlayer];
-        NSError *error;
-        self.player=[[AVAudioPlayer alloc]initWithContentsOfURL:fileUrl error:&error];
-        [self.player setVolume:1];
-        [self.player prepareToPlay];
-        [self.player setDelegate:self];
-        [self.player play];
-        [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];
+    if(self.player.isPlaying){
+        [self.player stop];
+    }
+    
+    //播放
+    NSString *filePath=[NSString documentPathWith:self.fileName];
+    NSURL *fileUrl=[NSURL fileURLWithPath:filePath];
+    [self initPlayer];
+    NSError *error;
+    self.player=[[AVAudioPlayer alloc]initWithContentsOfURL:fileUrl error:&error];
+    [self.player setVolume:1];
+    [self.player prepareToPlay];
+    [self.player setDelegate:self];
+    [self.player play];
+    [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];
+    
+    // ---
+    NSLog(@"Size :%lld", [self fileSizeAtPath:filePath]);
+}
+
+-(long long) fileSizeAtPath:(NSString*) filePath{
+    NSFileManager* manager = [NSFileManager defaultManager];
+    if ([manager fileExistsAtPath:filePath]){
+        return [[manager attributesOfItemAtPath:filePath error:nil] fileSize];
+    }
+    return 0;
 }
 
 //结束录制
@@ -66,6 +77,7 @@
     self.isRecording=NO;
     [self.recorder stop];
     self.recorder=nil;
+    NSLog(@"-----");
 }
 
 //开始录制
@@ -101,7 +113,6 @@
     [self.recorder record];
     
     NSLog(@"录制的文件路径:%@",fileName);
-    
 }
 
 //初始化播放器
