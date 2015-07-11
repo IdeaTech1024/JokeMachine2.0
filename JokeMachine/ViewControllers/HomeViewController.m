@@ -43,24 +43,22 @@
 }
 
 #pragma mark - private method
-
-//预览录制的内容
-- (void)recordPreview:(id)sender {
-    if(self.player.isPlaying){
-        [self.player stop];
-    }
-    
-    //播放
-    NSString *filePath=[NSString documentPathWith:self.fileName];
-    NSURL *fileUrl=[NSURL fileURLWithPath:filePath];
-    [self initPlayer];
-    NSError *error;
-    self.player=[[AVAudioPlayer alloc]initWithContentsOfURL:fileUrl error:&error];
-    [self.player setVolume:1];
-    [self.player prepareToPlay];
-    [self.player setDelegate:self];
-    [self.player play];
-    [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];
+- (IBAction)previewRecord:(UIButton *)sender {
+        if(self.player.isPlaying){
+            [self.player stop];
+        }
+        
+        //播放
+        NSString *filePath=[NSString documentPathWith:self.fileName];
+        NSURL *fileUrl=[NSURL fileURLWithPath:filePath];
+        [self initPlayer];
+        NSError *error;
+        self.player=[[AVAudioPlayer alloc]initWithContentsOfURL:fileUrl error:&error];
+        [self.player setVolume:1];
+        [self.player prepareToPlay];
+        [self.player setDelegate:self];
+        [self.player play];
+        [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];
 }
 
 //结束录制
@@ -162,13 +160,6 @@
 - (void)initSendJokeView
 {
     [self initJokeContentViewText];
-    
-    UIButton *previewBtn = [[UIButton alloc] initWithFrame:CGRectMake(40, 180, 100, 40)];
-    [previewBtn setTitle:@"试听" forState:UIControlStateNormal];
-    [previewBtn setBackgroundColor:[UIColor greenColor]];
-    [previewBtn addTarget:self action:@selector(recordPreview:) forControlEvents:UIControlEventTouchUpInside];
-    [_sendJokeView addSubview:previewBtn];
-    
 }
 
 - (void)initHomeScrollView
