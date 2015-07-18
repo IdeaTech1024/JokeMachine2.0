@@ -14,7 +14,7 @@
 #define SCREEN_HEIGHT       ([[UIScreen mainScreen] bounds].size.height)
 #define NAVIGATION_HEIGHT   (self.navigationController.navigationBar.frame.size.height)
 
-@interface HomeViewController ()<UIScrollViewDelegate,AVAudioPlayerDelegate>
+@interface HomeViewController ()<UIScrollViewDelegate,AVAudioPlayerDelegate, UITableViewDataSource, UITableViewDelegate>
 {}
 
 @property (weak, nonatomic) IBOutlet UIScrollView *homeScrollView;
@@ -40,8 +40,11 @@
     
     [self initHomeScrollView];
     [self initSendJokeView];
-    [self updateTitleView:0];
 }
+
+#pragma mark - SendView ------------------------------------
+
+
 
 #pragma mark - private method
 - (IBAction)previewRecord:(UIButton *)sender {
@@ -144,6 +147,59 @@
     self.player=nil;
 }
 
+#pragma mark - HomeView ------------------------------------
+#pragma mark - <TableView Delegate>
+
+#pragma mark - <TableView Datasource>
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
+{
+    return 100;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellIdentifier = @"cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    
+    // avatar ----
+    UIImageView *avatarImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 40, 40)];
+    UIImage *avatarImage = [UIImage imageNamed:@"userAvatar"];
+    avatarImageView.image = avatarImage;
+    [cell addSubview:avatarImageView];
+    
+    // text---
+    UILabel *userNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(60, 5, 200, 20)];
+    userNameLabel.text = @"笑死不偿命";
+    [cell addSubview:userNameLabel];
+    
+    return cell;
+}
+
+#pragma mark - Title Functions
+- (IBAction)sortByNew:(UIButton *)sender {
+    _sortNewBtn.tintColor = [UIColor blueColor];
+    _sortHotBtn.tintColor = [UIColor blackColor];
+}
+- (IBAction)sortByHot:(UIButton *)sender {
+    _sortNewBtn.tintColor = [UIColor blackColor];
+    _sortHotBtn.tintColor = [UIColor blueColor];
+}
+
+
 #pragma mark - <UIScrollViewDelegate>
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -196,6 +252,19 @@
     _homeScrollView.delegate = self;
     _homeScrollView.contentSize = CGSizeMake(SCREEN_WIDTH*2, 180);
     _homeScrollView.showsHorizontalScrollIndicator = NO;
+    
+    // ---
+    [self updateTitleView:0];
+
+    // ---
+    _sortNewBtn.tintColor = [UIColor blueColor];
+    _sortHotBtn.tintColor = [UIColor blackColor];
+    _sortView.layer.borderWidth = 0.5;
+    _sortView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    
+    // table view---
+    _homeTableView.dataSource = self;
+    _homeTableView.delegate = self;
 }
 
 /*

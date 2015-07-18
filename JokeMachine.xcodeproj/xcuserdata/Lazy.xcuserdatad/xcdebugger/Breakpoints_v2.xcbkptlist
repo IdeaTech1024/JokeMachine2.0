@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JokeMachine/ViewControllers/HomeViewController.m"
-            timestampString = "458876219.38379"
+            timestampString = "458881116.776669"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
             landmarkName = "-updateTitleView:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JokeMachine/ViewControllers/HomeViewController.m"
-            timestampString = "458876219.38379"
+            timestampString = "458881116.776669"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
             landmarkName = "-updateTitleView:"
             landmarkType = "5">
          </BreakpointContent>
