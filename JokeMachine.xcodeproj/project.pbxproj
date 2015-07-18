@@ -14,6 +14,12 @@
 		6326ADD41B3F878900AD053B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6326ADD21B3F878900AD053B /* LaunchScreen.xib */; };
 		6326ADE01B3F878900AD053B /* JokeMachineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6326ADDF1B3F878900AD053B /* JokeMachineTests.m */; };
 		638A1D531B59F84E00FE4B20 /* userAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 638A1D521B59F84E00FE4B20 /* userAvatar.png */; };
+		638A1D561B5A500A00FE4B20 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638A1D551B5A500A00FE4B20 /* UserInfoViewController.m */; };
+		638A1D591B5A502D00FE4B20 /* SendJokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638A1D581B5A502D00FE4B20 /* SendJokeViewController.m */; };
+		638A1D5C1B5A504B00FE4B20 /* AttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638A1D5B1B5A504B00FE4B20 /* AttentionViewController.m */; };
+		638A1D5F1B5A506400FE4B20 /* CollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638A1D5E1B5A506400FE4B20 /* CollectViewController.m */; };
+		638A1D621B5A508400FE4B20 /* MyJokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638A1D611B5A508400FE4B20 /* MyJokeViewController.m */; };
+		638A1D651B5A509B00FE4B20 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 638A1D641B5A509B00FE4B20 /* SettingViewController.m */; };
 		639B1E581B3FDC0F00180837 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639B1E571B3FDC0F00180837 /* HomeViewController.m */; };
 		63D4A52B1B592E93009999F0 /* MineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D4A52A1B592E93009999F0 /* MineTableViewController.m */; };
 		63D4A5331B5934C7009999F0 /* attention.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4A52F1B5934C7009999F0 /* attention.png */; };
@@ -47,6 +53,18 @@
 		6326ADDE1B3F878900AD053B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6326ADDF1B3F878900AD053B /* JokeMachineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JokeMachineTests.m; sourceTree = "<group>"; };
 		638A1D521B59F84E00FE4B20 /* userAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = userAvatar.png; path = "JokeMachine/Resources/@1x/userAvatar.png"; sourceTree = "<group>"; };
+		638A1D541B5A500A00FE4B20 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserInfoViewController.h; path = ViewControllers/UserInfoViewController.h; sourceTree = "<group>"; };
+		638A1D551B5A500A00FE4B20 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInfoViewController.m; path = ViewControllers/UserInfoViewController.m; sourceTree = "<group>"; };
+		638A1D571B5A502D00FE4B20 /* SendJokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SendJokeViewController.h; path = ViewControllers/SendJokeViewController.h; sourceTree = "<group>"; };
+		638A1D581B5A502D00FE4B20 /* SendJokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SendJokeViewController.m; path = ViewControllers/SendJokeViewController.m; sourceTree = "<group>"; };
+		638A1D5A1B5A504B00FE4B20 /* AttentionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttentionViewController.h; path = ViewControllers/AttentionViewController.h; sourceTree = "<group>"; };
+		638A1D5B1B5A504B00FE4B20 /* AttentionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttentionViewController.m; path = ViewControllers/AttentionViewController.m; sourceTree = "<group>"; };
+		638A1D5D1B5A506400FE4B20 /* CollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectViewController.h; path = ViewControllers/CollectViewController.h; sourceTree = "<group>"; };
+		638A1D5E1B5A506400FE4B20 /* CollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectViewController.m; path = ViewControllers/CollectViewController.m; sourceTree = "<group>"; };
+		638A1D601B5A508400FE4B20 /* MyJokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyJokeViewController.h; path = ViewControllers/MyJokeViewController.h; sourceTree = "<group>"; };
+		638A1D611B5A508400FE4B20 /* MyJokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyJokeViewController.m; path = ViewControllers/MyJokeViewController.m; sourceTree = "<group>"; };
+		638A1D631B5A509B00FE4B20 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingViewController.h; path = ViewControllers/SettingViewController.h; sourceTree = "<group>"; };
+		638A1D641B5A509B00FE4B20 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingViewController.m; path = ViewControllers/SettingViewController.m; sourceTree = "<group>"; };
 		639B1E561B3FDC0F00180837 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ViewControllers/HomeViewController.h; sourceTree = "<group>"; };
 		639B1E571B3FDC0F00180837 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ViewControllers/HomeViewController.m; sourceTree = "<group>"; };
 		63D4A5291B592E93009999F0 /* MineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineTableViewController.h; path = ViewControllers/MineTableViewController.h; sourceTree = "<group>"; };
@@ -145,6 +163,18 @@
 				639B1E571B3FDC0F00180837 /* HomeViewController.m */,
 				63D4A5291B592E93009999F0 /* MineTableViewController.h */,
 				63D4A52A1B592E93009999F0 /* MineTableViewController.m */,
+				638A1D541B5A500A00FE4B20 /* UserInfoViewController.h */,
+				638A1D551B5A500A00FE4B20 /* UserInfoViewController.m */,
+				638A1D571B5A502D00FE4B20 /* SendJokeViewController.h */,
+				638A1D581B5A502D00FE4B20 /* SendJokeViewController.m */,
+				638A1D5A1B5A504B00FE4B20 /* AttentionViewController.h */,
+				638A1D5B1B5A504B00FE4B20 /* AttentionViewController.m */,
+				638A1D5D1B5A506400FE4B20 /* CollectViewController.h */,
+				638A1D5E1B5A506400FE4B20 /* CollectViewController.m */,
+				638A1D601B5A508400FE4B20 /* MyJokeViewController.h */,
+				638A1D611B5A508400FE4B20 /* MyJokeViewController.m */,
+				638A1D631B5A509B00FE4B20 /* SettingViewController.h */,
+				638A1D641B5A509B00FE4B20 /* SettingViewController.m */,
 			);
 			name = VCs;
 			path = JokeMachine;
@@ -304,10 +334,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6326ADC91B3F878900AD053B /* AppDelegate.m in Sources */,
+				638A1D5C1B5A504B00FE4B20 /* AttentionViewController.m in Sources */,
 				664031DC1B4935830045E30F /* NSString+DocumentPath.m in Sources */,
+				638A1D621B5A508400FE4B20 /* MyJokeViewController.m in Sources */,
 				63D4A52B1B592E93009999F0 /* MineTableViewController.m in Sources */,
 				6326ADC61B3F878900AD053B /* main.m in Sources */,
 				639B1E581B3FDC0F00180837 /* HomeViewController.m in Sources */,
+				638A1D561B5A500A00FE4B20 /* UserInfoViewController.m in Sources */,
+				638A1D5F1B5A506400FE4B20 /* CollectViewController.m in Sources */,
+				638A1D651B5A509B00FE4B20 /* SettingViewController.m in Sources */,
+				638A1D591B5A502D00FE4B20 /* SendJokeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

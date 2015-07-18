@@ -14,11 +14,9 @@
 // Home View -------------------------
 // title ---
 @property (weak, nonatomic) IBOutlet UIButton *title0;
-@property (weak, nonatomic) IBOutlet UIButton *title1;
+
 // ---
 @property (weak, nonatomic) IBOutlet UIView *sortView;
-@property (weak, nonatomic) IBOutlet UIButton *sortNewBtn;
-@property (weak, nonatomic) IBOutlet UIButton *sortHotBtn;
 
 @property (weak, nonatomic) IBOutlet UITableView *homeTableView;
 

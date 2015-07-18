@@ -189,17 +189,6 @@
     return cell;
 }
 
-#pragma mark - Title Functions
-- (IBAction)sortByNew:(UIButton *)sender {
-    _sortNewBtn.tintColor = [UIColor blueColor];
-    _sortHotBtn.tintColor = [UIColor blackColor];
-}
-- (IBAction)sortByHot:(UIButton *)sender {
-    _sortNewBtn.tintColor = [UIColor blackColor];
-    _sortHotBtn.tintColor = [UIColor blueColor];
-}
-
-
 #pragma mark - <UIScrollViewDelegate>
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -215,24 +204,11 @@
         int current = scrollView.contentOffset.x / SCREEN_WIDTH;
         UIPageControl *pageControl = (UIPageControl *)[self.view viewWithTag:101];
         pageControl.currentPage = current;
-        [self updateTitleView:current];
     }
 }
 
 #pragma mark - Functions
-- (void)updateTitleView:(int)currentPage
-{
-    if(currentPage == 0)
-    {
-        _title0.tintColor = [UIColor blueColor];
-        _title1.tintColor = [UIColor lightGrayColor];
-    }
-    else
-    {
-        _title0.tintColor = [UIColor lightGrayColor];
-        _title1.tintColor = [UIColor blueColor];
-    }
-}
+
 
 - (void)initJokeContentViewText
 {
@@ -254,11 +230,8 @@
     _homeScrollView.showsHorizontalScrollIndicator = NO;
     
     // ---
-    [self updateTitleView:0];
-
+    
     // ---
-    _sortNewBtn.tintColor = [UIColor blueColor];
-    _sortHotBtn.tintColor = [UIColor blackColor];
     _sortView.layer.borderWidth = 0.5;
     _sortView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     
