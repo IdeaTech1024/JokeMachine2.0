@@ -222,7 +222,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle=" " footerTitle=" " id="nbR-1E-jVV">
+                            <tableViewSection headerTitle=" " id="nbR-1E-jVV">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Md8-Eo-ifY">
                                         <autoresizingMask key="autoresizingMask"/>
