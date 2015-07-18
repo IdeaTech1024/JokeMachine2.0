@@ -10,4 +10,7 @@
 
 @interface HomeViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *title0;
+@property (weak, nonatomic) IBOutlet UIButton *title1;
+
 @end

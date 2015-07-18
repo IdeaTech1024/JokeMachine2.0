@@ -40,6 +40,7 @@
     
     [self initHomeScrollView];
     [self initSendJokeView];
+    [self updateTitleView:0];
 }
 
 #pragma mark - private method
@@ -158,10 +159,25 @@
         int current = scrollView.contentOffset.x / SCREEN_WIDTH;
         UIPageControl *pageControl = (UIPageControl *)[self.view viewWithTag:101];
         pageControl.currentPage = current;
+        [self updateTitleView:current];
     }
 }
 
 #pragma mark - Functions
+- (void)updateTitleView:(int)currentPage
+{
+    if(currentPage == 0)
+    {
+        _title0.tintColor = [UIColor blueColor];
+        _title1.tintColor = [UIColor lightGrayColor];
+    }
+    else
+    {
+        _title0.tintColor = [UIColor lightGrayColor];
+        _title1.tintColor = [UIColor blueColor];
+    }
+}
+
 - (void)initJokeContentViewText
 {
     _jokeContentTextView.layer.borderColor = UIColor.grayColor.CGColor;

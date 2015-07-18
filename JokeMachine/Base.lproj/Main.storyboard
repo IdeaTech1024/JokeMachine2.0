@@ -86,32 +86,28 @@
                     </view>
                     <navigationItem key="navigationItem" id="Lgb-HK-J24">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="3aR-Fc-w94">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UOG-IF-Hgu">
-                                <rect key="frame" x="16" y="7" width="80" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="我">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="jFa-OR-aQi" kind="push" id="FYx-7y-jeq"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                        <view key="titleView" contentMode="scaleToFill" id="fQs-ar-rPY">
-                            <rect key="frame" x="159" y="5.5" width="282" height="33"/>
+                        <view key="titleView" contentMode="scaleToFill" verticalCompressionResistancePriority="741" id="fQs-ar-rPY">
+                            <rect key="frame" x="16" y="5.5" width="568" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wav-zE-0OX">
-                                    <rect key="frame" x="32" y="0.0" width="46" height="30"/>
-                                    <state key="normal" title="段子机">
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggd-L7-X1m">
+                                    <rect key="frame" x="150" y="0.0" width="46" height="30"/>
+                                    <state key="normal" title="来一发">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggd-L7-X1m">
-                                    <rect key="frame" x="149" y="1" width="46" height="30"/>
-                                    <state key="normal" title="来一发">
-                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vP-d6-Oqb">
+                                    <rect key="frame" x="2" y="0.0" width="30" height="30"/>
+                                    <state key="normal" title="Button" image="avatar.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <segue destination="jFa-OR-aQi" kind="push" id="FXi-Rr-A4N"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wav-zE-0OX">
+                                    <rect key="frame" x="96" y="0.0" width="46" height="30"/>
+                                    <state key="normal" title="段子机">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                 </button>
@@ -125,6 +121,8 @@
                         <outlet property="jokeContentTextView" destination="6fN-w5-tiq" id="Xdn-rK-hmH"/>
                         <outlet property="recordBtn" destination="ojR-SM-ALt" id="5I6-dv-bz3"/>
                         <outlet property="sendJokeView" destination="A8G-WX-ZMf" id="apb-IK-iNp"/>
+                        <outlet property="title0" destination="wav-zE-0OX" id="9A0-9P-65a"/>
+                        <outlet property="title1" destination="Ggd-L7-X1m" id="9wA-Z6-S5y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QyI-mn-5eb" userLabel="First Responder" sceneMemberID="firstResponder"/>
