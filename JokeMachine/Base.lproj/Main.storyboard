@@ -43,32 +43,67 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </tableView>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4cM-Ve-9OA">
-                                                <rect key="frame" x="-1" y="-1" width="377" height="44"/>
+                                                <rect key="frame" x="0.0" y="-1" width="377" height="44"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9h-Sb-QWG">
-                                                        <rect key="frame" x="265" y="8" width="46" height="30"/>
-                                                        <state key="normal" title="最新">
+                                                        <rect key="frame" x="24" y="8" width="46" height="30"/>
+                                                        <state key="normal" title="推荐">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="sortByNew:" destination="dFS-QN-cA8" eventType="touchUpInside" id="pFz-R2-dna"/>
                                                         </connections>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhi-6S-211">
+                                                        <rect key="frame" x="78" y="8" width="46" height="30"/>
+                                                        <state key="normal" title="笑话">
+                                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sortByNew:" destination="dFS-QN-cA8" eventType="touchUpInside" id="FIr-jR-iDp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G0-m6-F9z">
+                                                        <rect key="frame" x="132" y="8" width="46" height="30"/>
+                                                        <state key="normal" title="糗事">
+                                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sortByNew:" destination="dFS-QN-cA8" eventType="touchUpInside" id="wG6-sv-U7I"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eft-y9-PVZ">
+                                                        <rect key="frame" x="186" y="8" width="46" height="30"/>
+                                                        <state key="normal" title="冷">
+                                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sortByNew:" destination="dFS-QN-cA8" eventType="touchUpInside" id="uyt-vy-G1K"/>
+                                                        </connections>
+                                                    </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ye-0b-eIM">
-                                                        <rect key="frame" x="314" y="7" width="46" height="30"/>
-                                                        <state key="normal" title="最热">
+                                                        <rect key="frame" x="294" y="8" width="46" height="30"/>
+                                                        <state key="normal" title="什么鬼">
+                                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="sortByHot:" destination="dFS-QN-cA8" eventType="touchUpInside" id="YcL-Fh-5O8"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="|" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8p-Ca-9Tk">
-                                                        <rect key="frame" x="305" y="10" width="12" height="21"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJf-1p-575">
+                                                        <rect key="frame" x="240" y="8" width="46" height="30"/>
+                                                        <state key="normal" title="荤">
+                                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sortByNew:" destination="dFS-QN-cA8" eventType="touchUpInside" id="WLE-SL-w55"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
@@ -120,12 +155,6 @@
                             <rect key="frame" x="16" y="5.5" width="568" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggd-L7-X1m">
-                                    <rect key="frame" x="150" y="0.0" width="46" height="30"/>
-                                    <state key="normal" title="来一发">
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                </button>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vP-d6-Oqb">
                                     <rect key="frame" x="2" y="0.0" width="30" height="30"/>
                                     <state key="normal" title="Button" image="avatar.png">
@@ -136,7 +165,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wav-zE-0OX">
-                                    <rect key="frame" x="96" y="0.0" width="46" height="30"/>
+                                    <rect key="frame" x="122" y="0.0" width="46" height="30"/>
                                     <state key="normal" title="段子机">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
@@ -152,11 +181,8 @@
                         <outlet property="jokeContentTextView" destination="6fN-w5-tiq" id="Xdn-rK-hmH"/>
                         <outlet property="recordBtn" destination="ojR-SM-ALt" id="5I6-dv-bz3"/>
                         <outlet property="sendJokeView" destination="A8G-WX-ZMf" id="apb-IK-iNp"/>
-                        <outlet property="sortHotBtn" destination="9Ye-0b-eIM" id="vac-Kb-bRa"/>
-                        <outlet property="sortNewBtn" destination="B9h-Sb-QWG" id="QkI-1e-bvL"/>
                         <outlet property="sortView" destination="4cM-Ve-9OA" id="IVO-Gz-Hnd"/>
                         <outlet property="title0" destination="wav-zE-0OX" id="9A0-9P-65a"/>
-                        <outlet property="title1" destination="Ggd-L7-X1m" id="9wA-Z6-S5y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QyI-mn-5eb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -191,7 +217,31 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Lw9-c0-K4b" kind="push" id="gZN-Gs-PNE"/>
+                                            <segue destination="Lw9-c0-K4b" kind="push" id="4O5-4a-XT5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle=" " footerTitle=" " id="nbR-1E-jVV">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Md8-Eo-ifY">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Md8-Eo-ifY" id="x2n-LM-bQF">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="set.png" translatesAutoresizingMaskIntoConstraints="NO" id="z7f-7g-TTP">
+                                                    <rect key="frame" x="17" y="2" width="40" height="40"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="来一发" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RV-b2-imp">
+                                                    <rect key="frame" x="80" y="2" width="80" height="40"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="xT5-XR-qov" kind="push" id="tM4-Hr-HGE"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -215,7 +265,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="aXZ-3M-DvG" kind="push" id="XTQ-Dr-fY1"/>
+                                            <segue destination="aXZ-3M-DvG" kind="push" id="ezl-3r-Yqe"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="7HL-BH-3Ea">
@@ -235,7 +285,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="f2S-ft-SvK" kind="push" id="0Ma-6U-r1C"/>
+                                            <segue destination="f2S-ft-SvK" kind="push" id="yUn-jp-wlU"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="79e-O4-95x">
@@ -255,7 +305,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="POJ-UN-fFO" kind="push" id="AjN-4w-PoF"/>
+                                            <segue destination="POJ-UN-fFO" kind="push" id="Csp-LU-DHh"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -279,7 +329,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="YsB-sz-4Cl" kind="push" id="nXB-8n-KNL"/>
+                                            <segue destination="YsB-sz-4Cl" kind="push" id="qJY-kh-wHx"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -299,7 +349,7 @@
         <!--账号-->
         <scene sceneID="wUd-DG-eGS">
             <objects>
-                <viewController title="账号" id="Lw9-c0-K4b" sceneMemberID="viewController">
+                <viewController title="账号" id="Lw9-c0-K4b" customClass="UserInfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p6C-j8-PeP"/>
                         <viewControllerLayoutGuide type="bottom" id="NbB-7H-Agn"/>
@@ -313,12 +363,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZK-bA-1hQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-631" y="-1177"/>
+            <point key="canvasLocation" x="-1659" y="-1473"/>
         </scene>
         <!--我的段子-->
         <scene sceneID="DZL-rt-kWy">
             <objects>
-                <viewController title="我的段子" id="POJ-UN-fFO" sceneMemberID="viewController">
+                <viewController title="我的段子" id="POJ-UN-fFO" customClass="MyJokeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QYO-87-X8z"/>
                         <viewControllerLayoutGuide type="bottom" id="p8h-Ee-GJw"/>
@@ -332,12 +382,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXP-kt-y5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="193"/>
+            <point key="canvasLocation" x="-300" y="17"/>
+        </scene>
+        <!--来一发-->
+        <scene sceneID="J5G-ug-5Jr">
+            <objects>
+                <viewController title="来一发" id="xT5-XR-qov" userLabel="来一发" customClass="SendJokeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xMg-Jr-vns"/>
+                        <viewControllerLayoutGuide type="bottom" id="XZa-1Y-9Rv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8IV-kc-jRO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gpi-hv-CZp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ct-uZ-N2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1055" y="-1473"/>
         </scene>
         <!--设置-->
         <scene sceneID="mnV-rw-n0i">
             <objects>
-                <viewController title="设置" id="YsB-sz-4Cl" sceneMemberID="viewController">
+                <viewController title="设置" id="YsB-sz-4Cl" customClass="SettingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X1O-2B-jWz"/>
                         <viewControllerLayoutGuide type="bottom" id="fyw-Hs-6WG"/>
@@ -351,12 +420,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTo-kr-bhy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-631" y="315"/>
+            <point key="canvasLocation" x="-1055" y="359"/>
         </scene>
         <!--我的关注-->
         <scene sceneID="cjB-RI-eIp">
             <objects>
-                <viewController title="我的关注" id="aXZ-3M-DvG" sceneMemberID="viewController">
+                <viewController title="我的关注" id="aXZ-3M-DvG" customClass="AttentionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iEt-ZC-7ch"/>
                         <viewControllerLayoutGuide type="bottom" id="nG9-Jn-V0X"/>
@@ -370,12 +439,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2D-jn-8qp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="-443"/>
+            <point key="canvasLocation" x="-300" y="-1247"/>
         </scene>
         <!--我的收藏-->
         <scene sceneID="baY-il-0YW">
             <objects>
-                <viewController title="我的收藏" id="f2S-ft-SvK" sceneMemberID="viewController">
+                <viewController title="我的收藏" id="f2S-ft-SvK" customClass="CollectViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eNN-j9-KNo"/>
                         <viewControllerLayoutGuide type="bottom" id="Ym8-Xg-t2Q"/>
@@ -389,7 +458,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AVP-ux-j1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="-1083"/>
+            <point key="canvasLocation" x="-300" y="-615"/>
         </scene>
     </scenes>
     <resources>
