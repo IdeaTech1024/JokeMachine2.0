@@ -13,6 +13,7 @@
 		6326ADD11B3F878900AD053B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6326ADD01B3F878900AD053B /* Images.xcassets */; };
 		6326ADD41B3F878900AD053B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6326ADD21B3F878900AD053B /* LaunchScreen.xib */; };
 		6326ADE01B3F878900AD053B /* JokeMachineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6326ADDF1B3F878900AD053B /* JokeMachineTests.m */; };
+		638A1D531B59F84E00FE4B20 /* userAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 638A1D521B59F84E00FE4B20 /* userAvatar.png */; };
 		639B1E581B3FDC0F00180837 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639B1E571B3FDC0F00180837 /* HomeViewController.m */; };
 		63D4A52B1B592E93009999F0 /* MineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D4A52A1B592E93009999F0 /* MineTableViewController.m */; };
 		63D4A5331B5934C7009999F0 /* attention.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4A52F1B5934C7009999F0 /* attention.png */; };
@@ -45,6 +46,7 @@
 		6326ADD91B3F878900AD053B /* JokeMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokeMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6326ADDE1B3F878900AD053B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6326ADDF1B3F878900AD053B /* JokeMachineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JokeMachineTests.m; sourceTree = "<group>"; };
+		638A1D521B59F84E00FE4B20 /* userAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = userAvatar.png; path = "JokeMachine/Resources/@1x/userAvatar.png"; sourceTree = "<group>"; };
 		639B1E561B3FDC0F00180837 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ViewControllers/HomeViewController.h; sourceTree = "<group>"; };
 		639B1E571B3FDC0F00180837 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ViewControllers/HomeViewController.m; sourceTree = "<group>"; };
 		63D4A5291B592E93009999F0 /* MineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineTableViewController.h; path = ViewControllers/MineTableViewController.h; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		63D4A52D1B5931D5009999F0 /* @1x */ = {
 			isa = PBXGroup;
 			children = (
+				638A1D521B59F84E00FE4B20 /* userAvatar.png */,
 				63D4A52F1B5934C7009999F0 /* attention.png */,
 				63D4A5301B5934C7009999F0 /* collect.png */,
 				63D4A5311B5934C7009999F0 /* mine.png */,
@@ -281,6 +284,7 @@
 				63D4A5341B5934C7009999F0 /* collect.png in Resources */,
 				63D4A5331B5934C7009999F0 /* attention.png in Resources */,
 				63D4A5361B5934C7009999F0 /* set.png in Resources */,
+				638A1D531B59F84E00FE4B20 /* userAvatar.png in Resources */,
 				6326ADD11B3F878900AD053B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
