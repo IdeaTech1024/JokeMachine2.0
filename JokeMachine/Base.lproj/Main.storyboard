@@ -35,83 +35,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ntw-dx-YrG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="774-aG-CSR" userLabel="HomeView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
-                                        <subviews>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="60" sectionFooterHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="9RP-EM-Q4C">
-                                                <rect key="frame" x="0.0" y="43" width="375" height="607"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </tableView>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4cM-Ve-9OA">
-                                                <rect key="frame" x="0.0" y="-1" width="377" height="44"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9h-Sb-QWG">
-                                                        <rect key="frame" x="24" y="8" width="46" height="30"/>
-                                                        <state key="normal" title="推荐">
-                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="sortByNew:" destination="dFS-QN-cA8" eventType="touchUpInside" id="pFz-R2-dna"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhi-6S-211">
-                                                        <rect key="frame" x="78" y="8" width="46" height="30"/>
-                                                        <state key="normal" title="笑话">
-                                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="sortByNew:" destination="dFS-QN-cA8" eventType="touchUpInside" id="FIr-jR-iDp"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G0-m6-F9z">
-                                                        <rect key="frame" x="132" y="8" width="46" height="30"/>
-                                                        <state key="normal" title="糗事">
-                                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="sortByNew:" destination="dFS-QN-cA8" eventType="touchUpInside" id="wG6-sv-U7I"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eft-y9-PVZ">
-                                                        <rect key="frame" x="186" y="8" width="46" height="30"/>
-                                                        <state key="normal" title="冷">
-                                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="sortByNew:" destination="dFS-QN-cA8" eventType="touchUpInside" id="uyt-vy-G1K"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ye-0b-eIM">
-                                                        <rect key="frame" x="294" y="8" width="46" height="30"/>
-                                                        <state key="normal" title="什么鬼">
-                                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="sortByHot:" destination="dFS-QN-cA8" eventType="touchUpInside" id="YcL-Fh-5O8"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJf-1p-575">
-                                                        <rect key="frame" x="240" y="8" width="46" height="30"/>
-                                                        <state key="normal" title="荤">
-                                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="sortByNew:" destination="dFS-QN-cA8" eventType="touchUpInside" id="WLE-SL-w55"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" red="1" green="0.32665264040000003" blue="0.15803172269999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A8G-WX-ZMf" userLabel="SendJokeView">
-                                        <rect key="frame" x="375" y="0.0" width="375" height="623"/>
+                                        <rect key="frame" x="-375" y="0.0" width="375" height="623"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1gQ-cU-CZB">
                                                 <rect key="frame" x="313" y="76" width="62" height="59"/>
@@ -144,8 +69,80 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="774-aG-CSR" userLabel="推荐">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="60" sectionFooterHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="9RP-EM-Q4C">
+                                                <rect key="frame" x="0.0" y="43" width="375" height="607"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.32665264040000003" blue="0.15803172269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gst-dX-rJi" userLabel="笑话">
+                                        <rect key="frame" x="375" y="0.0" width="375" height="623"/>
+                                        <color key="backgroundColor" red="1" green="0.31782747357231056" blue="0.12284732201797355" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qLw-cA-8Jh" userLabel="糗事">
+                                        <rect key="frame" x="750" y="0.0" width="375" height="623"/>
+                                        <color key="backgroundColor" red="1" green="0.72703898750197915" blue="0.16286081576108458" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YuT-23-fKB" userLabel="冷">
+                                        <rect key="frame" x="1125" y="0.0" width="375" height="623"/>
+                                        <color key="backgroundColor" red="0.99117113426685366" green="1" blue="0.20416312813263271" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="atQ-ya-vPz" userLabel="荤">
+                                        <rect key="frame" x="1500" y="22" width="375" height="623"/>
+                                        <color key="backgroundColor" red="0.25358022920000001" green="1" blue="0.3040053513" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dLn-3L-4Vz" userLabel="什么鬼">
+                                        <rect key="frame" x="1875" y="22" width="375" height="623"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
                                 </subviews>
                             </scrollView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4cM-Ve-9OA">
+                                <rect key="frame" x="-1" y="64" width="377" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9h-Sb-QWG">
+                                        <rect key="frame" x="45" y="8" width="46" height="30"/>
+                                        <state key="normal" title="推荐">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhi-6S-211">
+                                        <rect key="frame" x="91" y="8" width="46" height="30"/>
+                                        <state key="normal" title="笑话">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G0-m6-F9z">
+                                        <rect key="frame" x="137" y="8" width="46" height="30"/>
+                                        <state key="normal" title="糗事">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eft-y9-PVZ">
+                                        <rect key="frame" x="183" y="8" width="46" height="30"/>
+                                        <state key="normal" title="冷">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ye-0b-eIM">
+                                        <rect key="frame" x="275" y="8" width="46" height="30"/>
+                                        <state key="normal" title="什么鬼">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJf-1p-575">
+                                        <rect key="frame" x="229" y="8" width="46" height="30"/>
+                                        <state key="normal" title="荤">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -175,13 +172,19 @@
                         </view>
                     </navigationItem>
                     <connections>
+                        <outlet property="coldBtn" destination="Eft-y9-PVZ" id="4Ln-TL-Yi0"/>
+                        <outlet property="colorBtn" destination="FJf-1p-575" id="2Oq-fz-b2l"/>
+                        <outlet property="funnyBtn" destination="fhi-6S-211" id="8zc-1L-w3c"/>
                         <outlet property="homeScrollView" destination="Ntw-dx-YrG" id="rlg-6A-aNX"/>
                         <outlet property="homeTableView" destination="9RP-EM-Q4C" id="1i6-dg-oq5"/>
                         <outlet property="homeView" destination="774-aG-CSR" id="rjz-d7-woE"/>
                         <outlet property="jokeContentTextView" destination="6fN-w5-tiq" id="Xdn-rK-hmH"/>
+                        <outlet property="otherBtn" destination="9Ye-0b-eIM" id="i3e-8q-FK1"/>
+                        <outlet property="recommendBtn" destination="B9h-Sb-QWG" id="CS0-Cy-tma"/>
                         <outlet property="recordBtn" destination="ojR-SM-ALt" id="5I6-dv-bz3"/>
                         <outlet property="sendJokeView" destination="A8G-WX-ZMf" id="apb-IK-iNp"/>
                         <outlet property="sortView" destination="4cM-Ve-9OA" id="IVO-Gz-Hnd"/>
+                        <outlet property="storyBtn" destination="9G0-m6-F9z" id="zD8-Sz-j2P"/>
                         <outlet property="title0" destination="wav-zE-0OX" id="9A0-9P-65a"/>
                     </connections>
                 </viewController>
