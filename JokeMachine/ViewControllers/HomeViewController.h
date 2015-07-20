@@ -14,13 +14,25 @@
 // Home View -------------------------
 // title ---
 @property (weak, nonatomic) IBOutlet UIButton *title0;
-
-// ---
 @property (weak, nonatomic) IBOutlet UIView *sortView;
 
+@property (weak, nonatomic) IBOutlet UIButton *recommendBtn;
+@property (weak, nonatomic) IBOutlet UIButton *funnyBtn;
+@property (weak, nonatomic) IBOutlet UIButton *storyBtn;
+@property (weak, nonatomic) IBOutlet UIButton *coldBtn;
+@property (weak, nonatomic) IBOutlet UIButton *colorBtn;
+@property (weak, nonatomic) IBOutlet UIButton *otherBtn;
+
+
+// Joke_Recommend -------------------------
 @property (weak, nonatomic) IBOutlet UITableView *homeTableView;
 
-// Send View -------------------------
+// Joke_Funny -------------------------
+// Joke_Story -------------------------
+// Joke_Cold -------------------------
+// Joke_Color -------------------------
+// Joke_Other -------------------------
+
 
 
 @end
