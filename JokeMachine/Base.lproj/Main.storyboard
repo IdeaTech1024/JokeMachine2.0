@@ -565,6 +565,9 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="278" y="415" width="109" height="44"/>
                                 </variation>
+                                <connections>
+                                    <action selector="sendJoke:" destination="xT5-XR-qov" eventType="touchUpInside" id="XFf-A4-ijX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
