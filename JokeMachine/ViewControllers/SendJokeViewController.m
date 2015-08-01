@@ -9,6 +9,7 @@
 #import "SendJokeViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "NSString+DocumentPath.h"
+#import "SVProgressHUD.h"
 
 @interface SendJokeViewController ()<AVAudioPlayerDelegate>
 
@@ -155,6 +156,10 @@
     self.auditionBtn.hidden = !will;
     self.sendJokeBtn.hidden = !will;
     
+}
+- (IBAction)sendJoke:(id)sender {
+    
+    [SVProgressHUD showWithOnlyStatus:@"发送成功！"];
 }
 
 #pragma mark - <AVAudioPlayerDelegate>

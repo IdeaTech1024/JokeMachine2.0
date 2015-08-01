@@ -28,6 +28,13 @@
 		63D4A5361B5934C7009999F0 /* set.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4A5321B5934C7009999F0 /* set.png */; };
 		63D4A5381B5935BA009999F0 /* avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4A5371B5935BA009999F0 /* avatar@2x.png */; };
 		664031DC1B4935830045E30F /* NSString+DocumentPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 664031DB1B4935830045E30F /* NSString+DocumentPath.m */; };
+		66B88F151B6CCD10002D587B /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 66B88F101B6CCD10002D587B /* SVProgressHUD.bundle */; };
+		66B88F161B6CCD10002D587B /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B88F121B6CCD10002D587B /* SVProgressHUD.m */; };
+		66B88F171B6CCD10002D587B /* UIImageView+LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B88F141B6CCD10002D587B /* UIImageView+LoadingView.m */; };
+		66B88F1A1B6CCE22002D587B /* CALayer+Spin.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B88F191B6CCE22002D587B /* CALayer+Spin.m */; };
+		66B88F261B6CCF84002D587B /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B88F251B6CCF84002D587B /* UIImage+Addition.m */; };
+		66B88F281B6CD18D002D587B /* AFNetworking 2.0 in Resources */ = {isa = PBXBuildFile; fileRef = 66B88F271B6CD18D002D587B /* AFNetworking 2.0 */; };
+		66B88F2A1B6CD29C002D587B /* FSTableView in Resources */ = {isa = PBXBuildFile; fileRef = 66B88F291B6CD29C002D587B /* FSTableView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +83,17 @@
 		63D4A5371B5935BA009999F0 /* avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "avatar@2x.png"; path = "JokeMachine/Resources/@2x/avatar@2x.png"; sourceTree = "<group>"; };
 		664031DA1B4935830045E30F /* NSString+DocumentPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DocumentPath.h"; sourceTree = "<group>"; };
 		664031DB1B4935830045E30F /* NSString+DocumentPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DocumentPath.m"; sourceTree = "<group>"; };
+		66B88F101B6CCD10002D587B /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		66B88F111B6CCD10002D587B /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		66B88F121B6CCD10002D587B /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		66B88F131B6CCD10002D587B /* UIImageView+LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LoadingView.h"; sourceTree = "<group>"; };
+		66B88F141B6CCD10002D587B /* UIImageView+LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LoadingView.m"; sourceTree = "<group>"; };
+		66B88F181B6CCE22002D587B /* CALayer+Spin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Spin.h"; sourceTree = "<group>"; };
+		66B88F191B6CCE22002D587B /* CALayer+Spin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Spin.m"; sourceTree = "<group>"; };
+		66B88F241B6CCF84002D587B /* UIImage+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addition.h"; sourceTree = "<group>"; };
+		66B88F251B6CCF84002D587B /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addition.m"; sourceTree = "<group>"; };
+		66B88F271B6CD18D002D587B /* AFNetworking 2.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "AFNetworking 2.0"; sourceTree = "<group>"; };
+		66B88F291B6CD29C002D587B /* FSTableView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FSTableView; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +117,7 @@
 		6326ADB71B3F878900AD053B = {
 			isa = PBXGroup;
 			children = (
+				66B88F0E1B6CCAE4002D587B /* Libs */,
 				6326ADC21B3F878900AD053B /* JokeMachine */,
 				6393C6BB1B41706C001684CC /* VCs */,
 				63D4A52C1B5931C1009999F0 /* Resources */,
@@ -221,10 +240,36 @@
 		664031D91B4935490045E30F /* category */ = {
 			isa = PBXGroup;
 			children = (
+				66B88F241B6CCF84002D587B /* UIImage+Addition.h */,
+				66B88F251B6CCF84002D587B /* UIImage+Addition.m */,
+				66B88F181B6CCE22002D587B /* CALayer+Spin.h */,
+				66B88F191B6CCE22002D587B /* CALayer+Spin.m */,
 				664031DA1B4935830045E30F /* NSString+DocumentPath.h */,
 				664031DB1B4935830045E30F /* NSString+DocumentPath.m */,
 			);
 			name = category;
+			sourceTree = "<group>";
+		};
+		66B88F0E1B6CCAE4002D587B /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				66B88F291B6CD29C002D587B /* FSTableView */,
+				66B88F271B6CD18D002D587B /* AFNetworking 2.0 */,
+				66B88F0F1B6CCB91002D587B /* SVProgressHUD */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		66B88F0F1B6CCB91002D587B /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				66B88F101B6CCD10002D587B /* SVProgressHUD.bundle */,
+				66B88F111B6CCD10002D587B /* SVProgressHUD.h */,
+				66B88F121B6CCD10002D587B /* SVProgressHUD.m */,
+				66B88F131B6CCD10002D587B /* UIImageView+LoadingView.h */,
+				66B88F141B6CCD10002D587B /* UIImageView+LoadingView.m */,
+			);
+			name = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,12 +355,15 @@
 				6326ADCF1B3F878900AD053B /* Main.storyboard in Resources */,
 				63D4A5381B5935BA009999F0 /* avatar@2x.png in Resources */,
 				6326ADD41B3F878900AD053B /* LaunchScreen.xib in Resources */,
+				66B88F281B6CD18D002D587B /* AFNetworking 2.0 in Resources */,
 				63D4A5351B5934C7009999F0 /* mine.png in Resources */,
 				63D4A5341B5934C7009999F0 /* collect.png in Resources */,
+				66B88F151B6CCD10002D587B /* SVProgressHUD.bundle in Resources */,
 				63D4A5331B5934C7009999F0 /* attention.png in Resources */,
 				63D4A5361B5934C7009999F0 /* set.png in Resources */,
 				638A1D531B59F84E00FE4B20 /* userAvatar.png in Resources */,
 				6326ADD11B3F878900AD053B /* Images.xcassets in Resources */,
+				66B88F2A1B6CD29C002D587B /* FSTableView in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,8 +386,12 @@
 				664031DC1B4935830045E30F /* NSString+DocumentPath.m in Sources */,
 				638A1D621B5A508400FE4B20 /* MyJokeViewController.m in Sources */,
 				63D4A52B1B592E93009999F0 /* MineTableViewController.m in Sources */,
+				66B88F161B6CCD10002D587B /* SVProgressHUD.m in Sources */,
 				6326ADC61B3F878900AD053B /* main.m in Sources */,
 				639B1E581B3FDC0F00180837 /* HomeViewController.m in Sources */,
+				66B88F261B6CCF84002D587B /* UIImage+Addition.m in Sources */,
+				66B88F171B6CCD10002D587B /* UIImageView+LoadingView.m in Sources */,
+				66B88F1A1B6CCE22002D587B /* CALayer+Spin.m in Sources */,
 				638A1D561B5A500A00FE4B20 /* UserInfoViewController.m in Sources */,
 				638A1D5F1B5A506400FE4B20 /* CollectViewController.m in Sources */,
 				638A1D651B5A509B00FE4B20 /* SettingViewController.m in Sources */,
