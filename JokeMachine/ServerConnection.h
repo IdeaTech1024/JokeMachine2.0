@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AFNetworking.h"
+#import "../AFNetworking/AFNetworking.h"
 
 #define HEADER_INFO_RESOLUTION @"screen"
 #define HEADER_INFO_SYSTEM @"clienttype"

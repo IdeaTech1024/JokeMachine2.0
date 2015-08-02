@@ -37,6 +37,7 @@
 
 
 
+
 - (id)initWithDelegate:(id)aDelegate action:(SEL)anAction {
 	
     return [self initWithDelegate:aDelegate action:anAction action:nil];
@@ -45,15 +46,15 @@
 - (id)initWithDelegate:(id)aDelegate action:(SEL)anAction action:(SEL)actionProgress
 {
     self = [super init];
-	if (self) {
-		self.delegate = aDelegate;
-		action = anAction;
-        _actionProgress = actionProgress;
-        
-        //超时：WIFI 20s | GPRS 30s | 上传图片 120s(单独设置)
-        timeoutInt = [AppSetting getCurrentNetStatus]==2?TIMEOUT_INTERVAL_WIFI:TIMEOUT_INTERVAL_GPRS;
-        _showNetErrToast = YES;
-	}
+//	if (self) {
+//		self.delegate = aDelegate;
+//		action = anAction;
+//        _actionProgress = actionProgress;
+//        
+//        //超时：WIFI 20s | GPRS 30s | 上传图片 120s(单独设置)
+//        timeoutInt = [AppSetting getCurrentNetStatus]==2?TIMEOUT_INTERVAL_WIFI:TIMEOUT_INTERVAL_GPRS;
+//        _showNetErrToast = YES;
+//	}
 	return self;
 }
 #pragma mark - get
@@ -721,5 +722,6 @@
 {
     [_currentOperation cancel];
 }
+
 
 @end

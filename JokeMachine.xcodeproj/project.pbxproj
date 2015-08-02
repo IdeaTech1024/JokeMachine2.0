@@ -38,7 +38,8 @@
 		66BB12D71B6DB133006E5089 /* ServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB12D51B6DB133006E5089 /* ServerConnection.m */; };
 		66BB12DB1B6DB531006E5089 /* AppSetting+Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB12DA1B6DB531006E5089 /* AppSetting+Setting.m */; };
 		66BB12DE1B6DB547006E5089 /* AppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB12DD1B6DB547006E5089 /* AppSetting.m */; };
-		66BB12E31B6DCA3A006E5089 /* AFNetworking in Resources */ = {isa = PBXBuildFile; fileRef = 66BB12E21B6DCA3A006E5089 /* AFNetworking */; };
+		66BB12E81B6E0781006E5089 /* AppSetting+Token.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB12E71B6E0781006E5089 /* AppSetting+Token.m */; };
+		66BB12EA1B6E0D26006E5089 /* AFNetworking in Resources */ = {isa = PBXBuildFile; fileRef = 66BB12E91B6E0D26006E5089 /* AFNetworking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,7 +108,11 @@
 		66BB12DD1B6DB547006E5089 /* AppSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSetting.m; sourceTree = "<group>"; };
 		66BB12E01B6DB608006E5089 /* ConstantDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantDefines.h; sourceTree = "<group>"; };
 		66BB12E11B6DBB56006E5089 /* JokeMachine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JokeMachine-Prefix.pch"; sourceTree = "<group>"; };
-		66BB12E21B6DCA3A006E5089 /* AFNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AFNetworking; sourceTree = "<group>"; };
+		66BB12E41B6E00D3006E5089 /* CommonHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHeaders.h; sourceTree = "<group>"; };
+		66BB12E51B6E00D3006E5089 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		66BB12E61B6E0781006E5089 /* AppSetting+Token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppSetting+Token.h"; sourceTree = "<group>"; };
+		66BB12E71B6E0781006E5089 /* AppSetting+Token.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppSetting+Token.m"; sourceTree = "<group>"; };
+		66BB12E91B6E0D26006E5089 /* AFNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AFNetworking; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,7 +276,7 @@
 		66B88F0E1B6CCAE4002D587B /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				66BB12E21B6DCA3A006E5089 /* AFNetworking */,
+				66BB12E91B6E0D26006E5089 /* AFNetworking */,
 				66B88F291B6CD29C002D587B /* FSTableView */,
 				66B88F0F1B6CCB91002D587B /* SVProgressHUD */,
 			);
@@ -304,6 +309,8 @@
 		66BB12D81B6DB4A5006E5089 /* AppSetting */ = {
 			isa = PBXGroup;
 			children = (
+				66BB12E61B6E0781006E5089 /* AppSetting+Token.h */,
+				66BB12E71B6E0781006E5089 /* AppSetting+Token.m */,
 				66BB12DC1B6DB547006E5089 /* AppSetting.h */,
 				66BB12DD1B6DB547006E5089 /* AppSetting.m */,
 				66BB12D91B6DB531006E5089 /* AppSetting+Setting.h */,
@@ -315,6 +322,8 @@
 		66BB12DF1B6DB5D8006E5089 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				66BB12E41B6E00D3006E5089 /* CommonHeaders.h */,
+				66BB12E51B6E00D3006E5089 /* Macro.h */,
 				66BB12E01B6DB608006E5089 /* ConstantDefines.h */,
 			);
 			name = Constant;
@@ -411,7 +420,7 @@
 				638A1D531B59F84E00FE4B20 /* userAvatar.png in Resources */,
 				6326ADD11B3F878900AD053B /* Images.xcassets in Resources */,
 				66B88F2A1B6CD29C002D587B /* FSTableView in Resources */,
-				66BB12E31B6DCA3A006E5089 /* AFNetworking in Resources */,
+				66BB12EA1B6E0D26006E5089 /* AFNetworking in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66BB12E81B6E0781006E5089 /* AppSetting+Token.m in Sources */,
 				6326ADC91B3F878900AD053B /* AppDelegate.m in Sources */,
 				66BB12DB1B6DB531006E5089 /* AppSetting+Setting.m in Sources */,
 				638A1D5C1B5A504B00FE4B20 /* AttentionViewController.m in Sources */,

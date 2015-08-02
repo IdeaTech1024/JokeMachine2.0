@@ -204,11 +204,6 @@ static inline BOOL AFStateTransitionIsValid(AFOperationState fromState, AFOperat
     return self;
 }
 
-- (instancetype)init NS_UNAVAILABLE
-{
-    return nil;
-}
-
 - (void)dealloc {
     if (_outputStream) {
         [_outputStream close];
@@ -503,7 +498,7 @@ static inline BOOL AFStateTransitionIsValid(AFOperationState fromState, AFOperat
 - (void)cancelConnection {
     NSDictionary *userInfo = nil;
     if ([self.request URL]) {
-        userInfo = @{NSURLErrorFailingURLErrorKey : [self.request URL]};
+        userInfo = [NSDictionary dictionaryWithObject:[self.request URL] forKey:NSURLErrorFailingURLErrorKey];
     }
     NSError *error = [NSError errorWithDomain:NSURLErrorDomain code:NSURLErrorCancelled userInfo:userInfo];
 
@@ -512,7 +507,7 @@ static inline BOOL AFStateTransitionIsValid(AFOperationState fromState, AFOperat
             [self.connection cancel];
             [self performSelector:@selector(connection:didFailWithError:) withObject:self.connection withObject:error];
         } else {
-            // Accommodate race condition where `self.connection` has not yet been set before cancellation
+            // Accomodate race condition where `self.connection` has not yet been set before cancellation
             self.error = error;
             [self finish];
         }
