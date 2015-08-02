@@ -83,10 +83,32 @@
     avatarImageView.image = avatarImage;
     [cell addSubview:avatarImageView];
     
-    // text---
-    UILabel *userNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(60, 5, 200, 20)];
-    userNameLabel.text = @"笑死不偿命";
+    UILabel *JokeNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(60, 5, 200, 20)];
+    JokeNameLabel.text = @"曾经有一份爱情";
+    [cell addSubview:JokeNameLabel];
+    
+    
+    UILabel *userNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(60, 40, 80, 10)];
+    userNameLabel.text = @"至尊宝";
+    userNameLabel.textColor = [UIColor lightGrayColor];
+    userNameLabel.font = [UIFont systemFontOfSize:14];
     [cell addSubview:userNameLabel];
+    
+    UIButton *playBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    playBtn.frame = CGRectMake(140, 35, 20, 20);
+    [playBtn setBackgroundImage:[UIImage imageNamed:@"playBtnImage.png"] forState:UIControlStateNormal];
+    [cell addSubview:playBtn];
+    
+    UILabel *audioTimeLabel = [[UILabel alloc] initWithFrame:CGRectMake(180, 40, 80, 10)];
+    audioTimeLabel.text = @"60s";
+    audioTimeLabel.textColor = [UIColor lightGrayColor];
+    audioTimeLabel.font = [UIFont systemFontOfSize:14];
+    [cell addSubview:audioTimeLabel];
+    
+    UIButton *praiseBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    praiseBtn.frame = CGRectMake(260, 35, 20, 20);
+    [praiseBtn setBackgroundImage:[UIImage imageNamed:@"praiseBtnImage.png"] forState:UIControlStateNormal];
+    [cell addSubview:praiseBtn];
     
     return cell;
 }

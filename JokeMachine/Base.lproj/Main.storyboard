@@ -118,7 +118,7 @@
                     <navigationItem key="navigationItem" id="Lgb-HK-J24">
                         <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" verticalCompressionResistancePriority="741" id="fQs-ar-rPY">
-                            <rect key="frame" x="16" y="6" width="568" height="33"/>
+                            <rect key="frame" x="16" y="5.5" width="568" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vP-d6-Oqb">

@@ -27,6 +27,8 @@
 		63D4A5351B5934C7009999F0 /* mine.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4A5311B5934C7009999F0 /* mine.png */; };
 		63D4A5361B5934C7009999F0 /* set.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4A5321B5934C7009999F0 /* set.png */; };
 		63D4A5381B5935BA009999F0 /* avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4A5371B5935BA009999F0 /* avatar@2x.png */; };
+		63FBABD91B6E086800B88DA3 /* playBtnImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FBABD81B6E086800B88DA3 /* playBtnImage.png */; };
+		63FBABDB1B6E0B2B00B88DA3 /* praiseBtnImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FBABDA1B6E0B2B00B88DA3 /* praiseBtnImage.png */; };
 		664031DC1B4935830045E30F /* NSString+DocumentPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 664031DB1B4935830045E30F /* NSString+DocumentPath.m */; };
 		66B88F151B6CCD10002D587B /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 66B88F101B6CCD10002D587B /* SVProgressHUD.bundle */; };
 		66B88F161B6CCD10002D587B /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B88F121B6CCD10002D587B /* SVProgressHUD.m */; };
@@ -81,6 +83,8 @@
 		63D4A5311B5934C7009999F0 /* mine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mine.png; path = "JokeMachine/Resources/@1x/mine.png"; sourceTree = "<group>"; };
 		63D4A5321B5934C7009999F0 /* set.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = set.png; path = "JokeMachine/Resources/@1x/set.png"; sourceTree = "<group>"; };
 		63D4A5371B5935BA009999F0 /* avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "avatar@2x.png"; path = "JokeMachine/Resources/@2x/avatar@2x.png"; sourceTree = "<group>"; };
+		63FBABD81B6E086800B88DA3 /* playBtnImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playBtnImage.png; path = "JokeMachine/Resources/@1x/playBtnImage.png"; sourceTree = "<group>"; };
+		63FBABDA1B6E0B2B00B88DA3 /* praiseBtnImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = praiseBtnImage.png; path = "JokeMachine/Resources/@1x/praiseBtnImage.png"; sourceTree = "<group>"; };
 		664031DA1B4935830045E30F /* NSString+DocumentPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DocumentPath.h"; sourceTree = "<group>"; };
 		664031DB1B4935830045E30F /* NSString+DocumentPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DocumentPath.m"; sourceTree = "<group>"; };
 		66B88F101B6CCD10002D587B /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
@@ -225,6 +229,8 @@
 				63D4A5301B5934C7009999F0 /* collect.png */,
 				63D4A5311B5934C7009999F0 /* mine.png */,
 				63D4A5321B5934C7009999F0 /* set.png */,
+				63FBABD81B6E086800B88DA3 /* playBtnImage.png */,
+				63FBABDA1B6E0B2B00B88DA3 /* praiseBtnImage.png */,
 			);
 			name = "@1x";
 			sourceTree = "<group>";
@@ -354,11 +360,13 @@
 			files = (
 				6326ADCF1B3F878900AD053B /* Main.storyboard in Resources */,
 				63D4A5381B5935BA009999F0 /* avatar@2x.png in Resources */,
+				63FBABD91B6E086800B88DA3 /* playBtnImage.png in Resources */,
 				6326ADD41B3F878900AD053B /* LaunchScreen.xib in Resources */,
 				66B88F281B6CD18D002D587B /* AFNetworking 2.0 in Resources */,
 				63D4A5351B5934C7009999F0 /* mine.png in Resources */,
 				63D4A5341B5934C7009999F0 /* collect.png in Resources */,
 				66B88F151B6CCD10002D587B /* SVProgressHUD.bundle in Resources */,
+				63FBABDB1B6E0B2B00B88DA3 /* praiseBtnImage.png in Resources */,
 				63D4A5331B5934C7009999F0 /* attention.png in Resources */,
 				63D4A5361B5934C7009999F0 /* set.png in Resources */,
 				638A1D531B59F84E00FE4B20 /* userAvatar.png in Resources */,
