@@ -26,8 +26,6 @@
 #ifndef _AFNETWORKING_
     #define _AFNETWORKING_
 
-    #import "AFDownloadRequestOperation.h"
-
     #import "AFURLRequestSerialization.h"
     #import "AFURLResponseSerialization.h"
     #import "AFSecurityPolicy.h"

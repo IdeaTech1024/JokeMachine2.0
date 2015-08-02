@@ -33,8 +33,12 @@
 		66B88F171B6CCD10002D587B /* UIImageView+LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B88F141B6CCD10002D587B /* UIImageView+LoadingView.m */; };
 		66B88F1A1B6CCE22002D587B /* CALayer+Spin.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B88F191B6CCE22002D587B /* CALayer+Spin.m */; };
 		66B88F261B6CCF84002D587B /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B88F251B6CCF84002D587B /* UIImage+Addition.m */; };
-		66B88F281B6CD18D002D587B /* AFNetworking 2.0 in Resources */ = {isa = PBXBuildFile; fileRef = 66B88F271B6CD18D002D587B /* AFNetworking 2.0 */; };
 		66B88F2A1B6CD29C002D587B /* FSTableView in Resources */ = {isa = PBXBuildFile; fileRef = 66B88F291B6CD29C002D587B /* FSTableView */; };
+		66BB12D61B6DB133006E5089 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB12D31B6DB133006E5089 /* API.m */; };
+		66BB12D71B6DB133006E5089 /* ServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB12D51B6DB133006E5089 /* ServerConnection.m */; };
+		66BB12DB1B6DB531006E5089 /* AppSetting+Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB12DA1B6DB531006E5089 /* AppSetting+Setting.m */; };
+		66BB12DE1B6DB547006E5089 /* AppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB12DD1B6DB547006E5089 /* AppSetting.m */; };
+		66BB12E31B6DCA3A006E5089 /* AFNetworking in Resources */ = {isa = PBXBuildFile; fileRef = 66BB12E21B6DCA3A006E5089 /* AFNetworking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,8 +96,18 @@
 		66B88F191B6CCE22002D587B /* CALayer+Spin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Spin.m"; sourceTree = "<group>"; };
 		66B88F241B6CCF84002D587B /* UIImage+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addition.h"; sourceTree = "<group>"; };
 		66B88F251B6CCF84002D587B /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addition.m"; sourceTree = "<group>"; };
-		66B88F271B6CD18D002D587B /* AFNetworking 2.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "AFNetworking 2.0"; sourceTree = "<group>"; };
 		66B88F291B6CD29C002D587B /* FSTableView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FSTableView; sourceTree = "<group>"; };
+		66BB12D21B6DB133006E5089 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		66BB12D31B6DB133006E5089 /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
+		66BB12D41B6DB133006E5089 /* ServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConnection.h; sourceTree = "<group>"; };
+		66BB12D51B6DB133006E5089 /* ServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerConnection.m; sourceTree = "<group>"; };
+		66BB12D91B6DB531006E5089 /* AppSetting+Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppSetting+Setting.h"; sourceTree = "<group>"; };
+		66BB12DA1B6DB531006E5089 /* AppSetting+Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppSetting+Setting.m"; sourceTree = "<group>"; };
+		66BB12DC1B6DB547006E5089 /* AppSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSetting.h; sourceTree = "<group>"; };
+		66BB12DD1B6DB547006E5089 /* AppSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSetting.m; sourceTree = "<group>"; };
+		66BB12E01B6DB608006E5089 /* ConstantDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantDefines.h; sourceTree = "<group>"; };
+		66BB12E11B6DBB56006E5089 /* JokeMachine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JokeMachine-Prefix.pch"; sourceTree = "<group>"; };
+		66BB12E21B6DCA3A006E5089 /* AFNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AFNetworking; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +168,7 @@
 			children = (
 				6326ADC41B3F878900AD053B /* Info.plist */,
 				6326ADC51B3F878900AD053B /* main.m */,
+				66BB12E11B6DBB56006E5089 /* JokeMachine-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -202,6 +217,9 @@
 		6393C6BC1B417095001684CC /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				66BB12DF1B6DB5D8006E5089 /* Constant */,
+				66BB12D81B6DB4A5006E5089 /* AppSetting */,
+				66BB12D11B6DB0C8006E5089 /* API */,
 				664031D91B4935490045E30F /* category */,
 			);
 			name = Global;
@@ -253,8 +271,8 @@
 		66B88F0E1B6CCAE4002D587B /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				66BB12E21B6DCA3A006E5089 /* AFNetworking */,
 				66B88F291B6CD29C002D587B /* FSTableView */,
-				66B88F271B6CD18D002D587B /* AFNetworking 2.0 */,
 				66B88F0F1B6CCB91002D587B /* SVProgressHUD */,
 			);
 			name = Libs;
@@ -270,6 +288,36 @@
 				66B88F141B6CCD10002D587B /* UIImageView+LoadingView.m */,
 			);
 			name = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		66BB12D11B6DB0C8006E5089 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				66BB12D21B6DB133006E5089 /* API.h */,
+				66BB12D31B6DB133006E5089 /* API.m */,
+				66BB12D41B6DB133006E5089 /* ServerConnection.h */,
+				66BB12D51B6DB133006E5089 /* ServerConnection.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		66BB12D81B6DB4A5006E5089 /* AppSetting */ = {
+			isa = PBXGroup;
+			children = (
+				66BB12DC1B6DB547006E5089 /* AppSetting.h */,
+				66BB12DD1B6DB547006E5089 /* AppSetting.m */,
+				66BB12D91B6DB531006E5089 /* AppSetting+Setting.h */,
+				66BB12DA1B6DB531006E5089 /* AppSetting+Setting.m */,
+			);
+			name = AppSetting;
+			sourceTree = "<group>";
+		};
+		66BB12DF1B6DB5D8006E5089 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				66BB12E01B6DB608006E5089 /* ConstantDefines.h */,
+			);
+			name = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,7 +403,6 @@
 				6326ADCF1B3F878900AD053B /* Main.storyboard in Resources */,
 				63D4A5381B5935BA009999F0 /* avatar@2x.png in Resources */,
 				6326ADD41B3F878900AD053B /* LaunchScreen.xib in Resources */,
-				66B88F281B6CD18D002D587B /* AFNetworking 2.0 in Resources */,
 				63D4A5351B5934C7009999F0 /* mine.png in Resources */,
 				63D4A5341B5934C7009999F0 /* collect.png in Resources */,
 				66B88F151B6CCD10002D587B /* SVProgressHUD.bundle in Resources */,
@@ -364,6 +411,7 @@
 				638A1D531B59F84E00FE4B20 /* userAvatar.png in Resources */,
 				6326ADD11B3F878900AD053B /* Images.xcassets in Resources */,
 				66B88F2A1B6CD29C002D587B /* FSTableView in Resources */,
+				66BB12E31B6DCA3A006E5089 /* AFNetworking in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6326ADC91B3F878900AD053B /* AppDelegate.m in Sources */,
+				66BB12DB1B6DB531006E5089 /* AppSetting+Setting.m in Sources */,
 				638A1D5C1B5A504B00FE4B20 /* AttentionViewController.m in Sources */,
 				664031DC1B4935830045E30F /* NSString+DocumentPath.m in Sources */,
 				638A1D621B5A508400FE4B20 /* MyJokeViewController.m in Sources */,
@@ -390,9 +439,12 @@
 				6326ADC61B3F878900AD053B /* main.m in Sources */,
 				639B1E581B3FDC0F00180837 /* HomeViewController.m in Sources */,
 				66B88F261B6CCF84002D587B /* UIImage+Addition.m in Sources */,
+				66BB12DE1B6DB547006E5089 /* AppSetting.m in Sources */,
 				66B88F171B6CCD10002D587B /* UIImageView+LoadingView.m in Sources */,
+				66BB12D61B6DB133006E5089 /* API.m in Sources */,
 				66B88F1A1B6CCE22002D587B /* CALayer+Spin.m in Sources */,
 				638A1D561B5A500A00FE4B20 /* UserInfoViewController.m in Sources */,
+				66BB12D71B6DB133006E5089 /* ServerConnection.m in Sources */,
 				638A1D5F1B5A506400FE4B20 /* CollectViewController.m in Sources */,
 				638A1D651B5A509B00FE4B20 /* SettingViewController.m in Sources */,
 				638A1D591B5A502D00FE4B20 /* SendJokeViewController.m in Sources */,
@@ -462,6 +514,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JokeMachine/JokeMachine-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -505,6 +559,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JokeMachine/JokeMachine-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
