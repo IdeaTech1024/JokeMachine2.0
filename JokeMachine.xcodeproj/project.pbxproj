@@ -51,6 +51,7 @@
 		66BB131A1B6E1B1A006E5089 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB13181B6E1B1A006E5089 /* EGORefreshTableHeaderView.m */; };
 		66BB131F1B6E1B33006E5089 /* ego_refresh_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66BB131D1B6E1B33006E5089 /* ego_refresh_arrow@2x.png */; };
 		66BB13201B6E1B33006E5089 /* ego_refresh_loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66BB131E1B6E1B33006E5089 /* ego_refresh_loading@2x.png */; };
+		66BB13281B6E1DA8006E5089 /* SendJokeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66BB13271B6E1DA8006E5089 /* SendJokeModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +148,8 @@
 		66BB13181B6E1B1A006E5089 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EGORefreshTableHeaderView.m; path = FSTableView/EGOTableViewPullRefresh/EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		66BB131D1B6E1B33006E5089 /* ego_refresh_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ego_refresh_arrow@2x.png"; path = "FSTableView/EGOTableViewPullRefresh/Resources/ego_refresh_arrow@2x.png"; sourceTree = "<group>"; };
 		66BB131E1B6E1B33006E5089 /* ego_refresh_loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ego_refresh_loading@2x.png"; path = "FSTableView/EGOTableViewPullRefresh/Resources/ego_refresh_loading@2x.png"; sourceTree = "<group>"; };
+		66BB13261B6E1DA8006E5089 /* SendJokeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendJokeModel.h; sourceTree = "<group>"; };
+		66BB13271B6E1DA8006E5089 /* SendJokeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendJokeModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,14 +235,13 @@
 		6393C6BB1B41706C001684CC /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				66BB13211B6E1C3A006E5089 /* SendJoke */,
 				639B1E561B3FDC0F00180837 /* HomeViewController.h */,
 				639B1E571B3FDC0F00180837 /* HomeViewController.m */,
 				63D4A5291B592E93009999F0 /* MineTableViewController.h */,
 				63D4A52A1B592E93009999F0 /* MineTableViewController.m */,
 				638A1D541B5A500A00FE4B20 /* UserInfoViewController.h */,
 				638A1D551B5A500A00FE4B20 /* UserInfoViewController.m */,
-				638A1D571B5A502D00FE4B20 /* SendJokeViewController.h */,
-				638A1D581B5A502D00FE4B20 /* SendJokeViewController.m */,
 				638A1D5A1B5A504B00FE4B20 /* AttentionViewController.h */,
 				638A1D5B1B5A504B00FE4B20 /* AttentionViewController.m */,
 				638A1D5D1B5A506400FE4B20 /* CollectViewController.h */,
@@ -418,6 +420,33 @@
 			name = resource;
 			sourceTree = "<group>";
 		};
+		66BB13211B6E1C3A006E5089 /* SendJoke */ = {
+			isa = PBXGroup;
+			children = (
+				66BB13231B6E1C83006E5089 /* Model */,
+				66BB13221B6E1C6D006E5089 /* ViewController */,
+			);
+			name = SendJoke;
+			sourceTree = "<group>";
+		};
+		66BB13221B6E1C6D006E5089 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				638A1D571B5A502D00FE4B20 /* SendJokeViewController.h */,
+				638A1D581B5A502D00FE4B20 /* SendJokeViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		66BB13231B6E1C83006E5089 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66BB13261B6E1DA8006E5089 /* SendJokeModel.h */,
+				66BB13271B6E1DA8006E5089 /* SendJokeModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -541,6 +570,7 @@
 				63D4A52B1B592E93009999F0 /* MineTableViewController.m in Sources */,
 				66B88F161B6CCD10002D587B /* SVProgressHUD.m in Sources */,
 				6326ADC61B3F878900AD053B /* main.m in Sources */,
+				66BB13281B6E1DA8006E5089 /* SendJokeModel.m in Sources */,
 				66BB13151B6E15EB006E5089 /* FSTableView.m in Sources */,
 				639B1E581B3FDC0F00180837 /* HomeViewController.m in Sources */,
 				66B88F261B6CCF84002D587B /* UIImage+Addition.m in Sources */,

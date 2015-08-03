@@ -7,24 +7,26 @@
 //
 
 #import "API.h"
+#import "SendJokeModel.h"
 
 @implementation API
 
-// 下面是接口实现：
 
-//// 上传 (model 含有本地图片和视频的路径)
-//- (void)api_fileUpload:(PostModel *)model
-//{
-//    NSData *dataVideo = [NSData dataWithContentsOfFile:model.videoFilterUrl];
-//    
-//    NSData *dataImage = [NSData dataWithContentsOfFile:model.localImagePath];
-//    
-//    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:0];
-//    
-//    SAFE_SETOBJECT(params, CURRENT_PLATFORM, @"clienttype");
-//    SAFE_SETOBJECT(params, [AppSetting getAppVersionCurrent], @"version");
-//    
-//    [super asyncPost:@"api/v3/video/fileupload" withDataImage:dataImage dataVideo:dataVideo params:params];
-//}
+// 上传段子
+- (void)uploadJoke:(SendJokeModel *)sendJokeModel{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:0];
+    
+    NSString *jokeLength = [NSString stringWithFormat:@"%d",sendJokeModel.length];
+    NSString *jokeType = [NSString stringWithFormat:@"%d",sendJokeModel.jokeType];
+    
+    SAFE_SETOBJECT(params, @"jokeName", sendJokeModel.jokeName);
+    SAFE_SETOBJECT(params, @"length", jokeLength);
+    SAFE_SETOBJECT(params, @"jokeType",jokeType);
+    SAFE_SETOBJECT(params, @"userId", sendJokeModel.userId);
+    SAFE_SETOBJECT(params, @"jokeData",sendJokeModel.jokeDataStr);
+    
+    [super asyncPost:@"" params:params];
+}
 
 @end
