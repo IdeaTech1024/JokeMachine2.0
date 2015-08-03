@@ -10,8 +10,12 @@
 #import <AVFoundation/AVFoundation.h>
 #import "NSString+DocumentPath.h"
 #import "SVProgressHUD.h"
+#import "API.h"
 
 @interface SendJokeViewController ()<AVAudioPlayerDelegate>
+{
+    API *sendJokeAPI;
+}
 
 @property (weak, nonatomic) IBOutlet UITextView *jokeContentTextView;
 @property (strong, nonatomic) IBOutlet UIButton *recordBtn;
@@ -23,6 +27,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *colorJokeLabel;
 @property (strong, nonatomic) IBOutlet UIButton *otherJokeLabel;
 
+@property (strong, nonatomic) IBOutlet UITextField *jokeNameTextField;
 
 
 
@@ -87,6 +92,9 @@
 
 //结束录制
 - (void)finishRecord{
+    
+    NSLog(@"time-----------%f",self.recorder.currentTime);
+    
     self.isRecording=NO;
     [self.recorder stop];
     self.recorder=nil;

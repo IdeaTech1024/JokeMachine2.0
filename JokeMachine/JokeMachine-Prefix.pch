@@ -1,0 +1,41 @@
+//
+//  JokeMachine-Prefix.pch
+//  JokeMachine
+//
+//  Created by 郝锋 on 15/8/2.
+//  Copyright (c) 2015年 李永亮. All rights reserved.
+//
+
+
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+
+
+#import <Availability.h>
+
+//#ifndef JokeMachine_JokeMachine_Prefix_pch
+//#define JokeMachine_JokeMachine_Prefix_pch
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Macro.h"
+#import "CommonHeaders.h"
+#import "ConstantDefines.h"
+//#import "Categories.h"
+
+#endif
+
+
+
+//#endif
+
+
